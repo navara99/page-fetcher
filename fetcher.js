@@ -6,7 +6,6 @@ const args = process.argv.splice(2);
 
 const showError = (err, res) => {
   console.log(`Error: ${err}`);
-  res && console.log(`Status code: ${res.statusCode}`);
   process.exit();
 };
 
@@ -53,4 +52,3 @@ const fetchPage = (input) => {
 };
 
 fetchPage(args);
-
